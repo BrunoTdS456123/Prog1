@@ -8,23 +8,23 @@ class ContaBancaria{
         ~ContaBancaria(){};
         float deposito(float deposito){
             saldo=saldo + deposito ; 
-            return saldo
+            return saldo;
         };
         float saque(float saque){
            saldo = saldo - saque ; 
            return saldo;
         };
-        void setNumeroConta(float conta2){
-conta= conta2 ;
+        void setNumeroConta(int conta2){
+Nconta= conta2 ;
         };
         void setSaldo(float saldo2){
 saldo= saldo2 ;
         };
 
     private:
-    int conta;
+    int Nconta;
     float saldo;
-    string Titularnome;
+    string nomeTitular;
 
 };
 
@@ -32,19 +32,20 @@ saldo= saldo2 ;
 
 int main(){
     ContaBancaria conta;
-    int conta;
-    int opcao
+    int Nconta;
+    int opcao;
     float saldo ,  deposito , saque ;
+    std::string nomeTitular;
      
         std::cout << "Digite o numero da conta: ";
-        std::cin >> numeroConta;
+        std::cin >> Nconta;
         
         std::cout << "Digite o nome titular da conta: ";
         std::cin >> nomeTitular;
         
-        conta.setNumeroConta(conta);
+        conta.setNumeroConta(Nconta);
 
-     std::cout << "Digite o valor na conta: ";
+     std::cout << "Digite o valor na conta:";
         std::cin >> saldo;
         
         conta.setSaldo(saldo);
@@ -56,13 +57,13 @@ int main(){
             case 1:
                 std::cout << "Digite o valor do depósito: ";
                 std::cin >> deposito;
-                saldo = conta.fazerDeposito(deposito);
+                saldo = conta.deposito(deposito);
                 break;
                 
             case 2:
                 std::cout << "Digite o valor do saque: ";
                 std::cin >> saque;
-                saldo = conta.fazerSaque(saque);
+                saldo = conta.saque(saque);
                 break;
             
             default:
@@ -71,11 +72,7 @@ int main(){
         
         
         
-    std::cout << numeroConta << "\n";
-    std::cout << nomeTitular << "\n";
-    std::cout << saldo;
+    std::cout << "Num conta:" << Nconta << "\n";
+    std::cout <<  "Titular:" << nomeTitular << "\n";
+    std::cout << "saldo:" << saldo;
     }
-
-
-
-}

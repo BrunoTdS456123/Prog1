@@ -17,7 +17,7 @@ class Funcionario{
         return anual;
     };
     void exibeDados(){
-        std::cout << "O Funcionario " << nome << "de recebe um salario de:R$" << getSalario() ;  
+        std::cout << "O Funcionario " << nome << "de recebe um salario de:R$" << salario ;  
        
     };
     
@@ -27,17 +27,12 @@ class Funcionario{
     void setcargo(int cargo_){
         cargo = cargo_ ;
     }; 
-    void setsalario(float salario_){
-        salario = salario_ ;
-    };
     
-      float getSalario(){               
-            return salario;
-        }
-       
+        
+       std::string nome;
    protected:
         
-        std::string nome;
+        
         int cargo ;
         float salario , anual;
         
@@ -54,6 +49,12 @@ class Assistente : public Funcionario {
     float getmatricula(){               
             return matricula;
             }
+            void setsalario(float salario_){
+        salario = salario_ ;
+    };
+    
+        float getSalario(){               
+            return salario;}
     void exibeDados(){
         std::cout << "O Funcionario " << nome << "de recebe um salario de:R$" << getSalario() ;  
         std::cout << "de matricula:" << matricula  ;  
@@ -64,7 +65,7 @@ class Assistente : public Funcionario {
     }
     protected:
     int matricula ; 
-    int cargo   ;
+    int cargo  ;
 };
     class Tecnico : public Assistente {
      public:
@@ -124,7 +125,7 @@ int main(){
     std::cin >> matricula ;
     std::cout << "cargo : digite 1 para assistente tecnico , e 2 para assistente administrativo";
     std::cin >> cargo ; 
-    conta.setsalario(salario);
+    objAssist.setsalario(salario);
     conta.setnome(nome);
     objAssist.setmatricula(matricula);
     conta.setcargo(cargo);
@@ -154,7 +155,8 @@ int main(){
         std::cout << "possui um salario anual:R$" << objAssist.getanual();
     break;
    }
-   conta.exibeDados();
+   
+
    
     
 

@@ -57,7 +57,7 @@ int main(){
     conta.setbeneficio(beneficio);
    conta.calcularsalario();
   
-     std::cout << "O Funcionario " << nome << " de cargo: " << cargo << " de recebe um salario liquido de: " << conta.getSalario(); 
+     std::cout << "O Funcionario " << nome << " de cargo: " << cargo << "  recebe um salario liquido de: " << conta.getSalario(); 
     std::cout << "\n";
      
        

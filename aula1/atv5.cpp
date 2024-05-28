@@ -41,23 +41,23 @@ int main(){
     float salario , imposto , beneficio , salarioB;
     
    
-     std::cout << "de a seu nome:";
-   std::cin >> nome ;
-     std::cout << "de o seu salario bruto:";
-   std::cin >> salarioB ;
-   std::cout << "qual seu cargo:";
-   std::cin >> cargo ;
+    std::cout << "de a seu nome:";
+    std::cin >> nome ;
+    std::cout << "de o seu salario bruto:";
+    std::cin >> salarioB ;
+    std::cout << "qual seu cargo:";
+    std::cin >> cargo ;
     std::cout << "quanto de imposto mensal voce paga:";
-   std::cin >> imposto ;
+    std::cin >> imposto ;
     std::cout << "quanto de beneficio vc recebe:";
-   std::cin >> beneficio ;
+    std::cin >> beneficio ;
     
     conta.setsalario(salarioB);
     conta.setimposto(imposto);
     conta.setbeneficio(beneficio);
-   conta.calcularsalario();
+    conta.calcularsalario();
   
-     std::cout << "O Funcionario " << nome << " de cargo: " << cargo << "  recebe um salario liquido de: " << conta.getSalario(); 
+    std::cout << "O Funcionario " << nome << " de cargo: " << cargo << "  recebe um salario liquido de: " << conta.getSalario(); 
     std::cout << "\n";
      
        

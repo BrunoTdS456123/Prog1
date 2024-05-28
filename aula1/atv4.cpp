@@ -45,22 +45,22 @@ int main(){
     float nota2;
     float nota3;
     float media;
-     std::cout << "de a sua matricula:";
-   std::cin >> matricula ;
-     std::cout << "de o seu nome:";
-   std::cin >> nome ;
-   std::cout << "de o valor da da nota1:";
-   std::cin >> nota1 ;
+    std::cout << "de a sua matricula:";
+    std::cin >> matricula ;
+    std::cout << "de o seu nome:";
+    std::cin >> nome ;
+    std::cout << "de o valor da da nota1:";
+    std::cin >> nota1 ;
     std::cout << "de o valor da da nota2:";
-   std::cin >> nota2 ;
+    std::cin >> nota2 ;
     std::cout << "de o valor da da nota3:";
-   std::cin >> nota3 ;
+    std::cin >> nota3 ;
     conta.setnota1(nota1);
     conta.setnota2(nota2);
     conta.setnota3(nota3);
-   conta.calcularMedia();
+    conta.calcularMedia();
   
-     std::cout << "O aluno " << nome << " de matricula: " << matricula; 
+    std::cout << "O aluno " << nome << " de matricula: " << matricula; 
     std::cout << "\n";
          if (conta.getMedia() >= 6){                                    
         std::cout << " foi aprovado,  com média !!!" << conta.getMedia();  

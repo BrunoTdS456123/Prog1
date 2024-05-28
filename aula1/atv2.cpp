@@ -15,10 +15,10 @@ class ContaBancaria{
            return saldo;
         };
         void setNumeroConta(int conta2){
-Nconta= conta2 ;
+            Nconta= conta2 ;
         };
         void setSaldo(float saldo2){
-saldo= saldo2 ;
+            saldo= saldo2 ;
         };
 
     private:
@@ -37,21 +37,21 @@ int main(){
     float saldo ,  deposito , saque ;
     std::string nomeTitular;
      
-        std::cout << "Digite o numero da conta: ";
-        std::cin >> Nconta;
+    std::cout << "Digite o numero da conta: ";
+    std::cin >> Nconta;
         
-        std::cout << "Digite o nome titular da conta: ";
-        std::cin >> nomeTitular;
+    std::cout << "Digite o nome titular da conta: ";
+    std::cin >> nomeTitular;
         
-        conta.setNumeroConta(Nconta);
+    conta.setNumeroConta(Nconta);
 
-     std::cout << "Digite o valor na conta:";
-        std::cin >> saldo;
+    std::cout << "Digite o valor na conta:";
+    std::cin >> saldo;
         
-        conta.setSaldo(saldo);
+    conta.setSaldo(saldo);
     std::cout << "Digite o numero correspondente a ação: \n 1-Deposito, 2-Saque \n";
         
-        std::cin >> opcao;
+    std::cin >> opcao;
 
         switch (opcao){
             case 1:

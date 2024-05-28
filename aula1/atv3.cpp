@@ -43,12 +43,12 @@ int main(){
    conta.setAltura(altura);
    std::cout << "de o valor da largura:";
    std::cin >> largura ;
-    conta.setLargura(largura);
+   conta.setLargura(largura);
    conta.calcularArea();
    conta.calcularPerimetro();
    std::cout << "A área do retangulo é: " << conta.getArea() ;
-        std::cout << "\n";
+   std::cout << "\n";
         
-        std::cout << "O perimetro do perimetro é " << conta.getPerimetro() ;
+   std::cout << "O perimetro do perimetro é " << conta.getPerimetro() ;
     return 0;
 }

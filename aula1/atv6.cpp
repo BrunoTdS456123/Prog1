@@ -6,14 +6,8 @@ class Funcionario{
     public:
     Funcionario(){};
     ~Funcionario(){};
-    float addAumento(){
-        
-       salario = salario*2 ;
-        return salario;
-    };
-      float ganhoAnual(){
-        
-       anual = salario*12 ;
+    float ganhoAnual(){
+        anual = salario*12 ;
         return anual;
     };
     void exibeDados(){
@@ -27,14 +21,14 @@ class Funcionario{
     void setcargo(int cargo_){
         cargo = cargo_ ;
     }; 
-     void setsalario(float salario_){
+    void setsalario(float salario_){
         salario = salario_ ;
     };
         
       
    protected:
         
-         std::string nome;
+        std::string nome;
         int cargo ;
         float salario , anual;
         
@@ -71,7 +65,7 @@ class Assistente : public Funcionario {
     int matricula ; 
     int cargo  ;
 };
-    class Tecnico : public Assistente {
+class Tecnico : public Assistente {
      public:
     Tecnico(){};
     ~Tecnico(){};
@@ -92,34 +86,44 @@ class Assistente : public Funcionario {
          };
     void exibeDados(){
         std::cout << "O Funcionario " << nome << " recebe um salario de:R$" << getSalario();  
-        std::cout << "de matricula:" << matricula  ;  
+        std::cout << " de matricula:" << matricula  ;  
     }
-        
+     void setmatricula(float matricula_){
+        matricula = matricula_ ;
+    }; 
+    void setnome(std::string nome_){
+        nome = nome_ ;
+    };  
     
     protected:
+     int matricula ;
     float bonusSalarial ;
      std::string nome;
     int cargo ;
     float salario , anual;
-        
-    
 };
 class administrativo : public Assistente {
      public:
     administrativo(){};
     ~administrativo(){};
+    
     void exibeDados(){
         std::cout << "O Funcionario " << nome << " recebe um salario de:R$" << getSalario();  
-        std::cout << "de matricula:" << matricula  ;  
+        std::cout << " de matricula:" << matricula  ;  
     }
-      float getanual(){               
+    float getanual(){               
         return anual;
     }
+    float getSalario(){               
+            return salario;}
     void setsalario(float salario_){
         salario = salario_ ;
     };
     void setAdicional(float adicional_){
         adicional = adicional_ ;
+    };
+    void setmatricula(int matricula_){
+        matricula = matricula_ ;
     };
     void ganhoAnual(){
          salario = salario + adicional;
@@ -128,9 +132,13 @@ class administrativo : public Assistente {
     void setturno(std::string turno_){
         turno = turno_ ;
          };
+    void setnome(std::string nome_){
+        nome = nome_ ;
+    };
           
     
     protected:
+    int matricula ;
     std::string turno;
     float adicional ;
     std::string nome;
@@ -152,7 +160,7 @@ int main(){
     float adicional ;
     std::string turno;
 
-    std::cout <<"de a seu nome:";
+    std::cout <<"de o seu nome:";
     std::cin >> nome ;
     std::cout << "de o seu salario :";
     std::cin >> salario ;
@@ -161,7 +169,7 @@ int main(){
     objAssist.setnome(nome);
     objAssist.setsalario(salario);
 
-    std::cout << "cargo : digite 1 para assistente tecnico , e 2 para assistente administrativo, 3 para funcionario comum";
+    std::cout << "cargo : digite 1 para assistente tecnico , e 2 para assistente administrativo, 3 para funcionario comum: ";
     std::cin >> cargo ; 
     if (cargo != 3){
         std::cout << "matricula :";
@@ -176,27 +184,32 @@ int main(){
     objTec.setsalario(salario);
         std::cout << "bonus salarial :" ;
         std::cin >> bonusSalarial ;
-
+        objTec.setmatricula(matricula);
         objTec.setbonus(bonusSalarial) ;
         objTec.ganhoAnual();
+        objTec.setnome(nome);
         objTec.exibeDados();
         std::cout << "possui um salario anual:R$" << objTec.getanual();
     break;
 
     case 2:
     objAdmin.setsalario(salario);
-        std::cout << "TURNO :";
-        std::cin >> turno ;
+    objAdmin.setnome(nome);
+    std::cout << "TURNO :";
+    std::cin >> turno ;
+    objAdmin.setturno(turno);
         if ( turno == "noite"){
-        std::cout << "adicional noturno recebido :";
-        std::cin >> adicional ;
-        objAdmin.setAdicional(adicional);
-}else{
+    std::cout << "adicional noturno recebido :";
+    std::cin >> adicional ;
+       
+        }else{
     adicional = 0 ;
 }
-        objAdmin.setturno(turno);
-        objAdmin.ganhoAnual();
-        objTec.exibeDados();
+       
+    objAdmin.setAdicional(adicional);
+    objAdmin.setmatricula(matricula);
+    objAdmin.ganhoAnual();
+    objAdmin.exibeDados();
         std::cout << "possui um salario anual:R$" << objAdmin.getanual();
     break;
     case 3: conta.exibeDados();

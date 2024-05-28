@@ -29,7 +29,7 @@ int main(){
    conta.setRaio(raio);
    area = conta.calcularArea();
    std::cout << "A área é: " << area;
-        std::cout << "\n";
-         perimetro = conta.calculePerimetro();
-        std::cout << "O perimetro é " << perimetro;
+   std::cout << "\n";
+   perimetro = conta.calculePerimetro();
+   std::cout << "O perimetro é " << perimetro;
 }

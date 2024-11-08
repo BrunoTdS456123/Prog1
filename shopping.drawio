@@ -367,18 +367,6 @@
         <mxCell id="WoEynEt4-xypaKONyxZ4-248" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="465" y="600" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="WoEynEt4-xypaKONyxZ4-249" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.625;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="WoEynEt4-xypaKONyxZ4-248">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="515" y="690" as="sourcePoint" />
-            <mxPoint x="565" y="640" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="515" y="660" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="WoEynEt4-xypaKONyxZ4-250" value="3º andar" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="485" y="625" width="50" height="25" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

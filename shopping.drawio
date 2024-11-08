@@ -598,6 +598,12 @@
         <mxCell id="WoEynEt4-xypaKONyxZ4-317" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=0;fillColor=#dae8fc;strokeColor=#6c8ebf;whiteSpace=wrap;gradientColor=#7ea6e0;" vertex="1" parent="1">
           <mxGeometry x="245" y="700" width="10" height="10" as="geometry" />
         </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-319" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=0;fillColor=#dae8fc;strokeColor=#6c8ebf;whiteSpace=wrap;gradientColor=#7ea6e0;" vertex="1" parent="1">
+          <mxGeometry x="565" y="420" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-320" value="ponto de rede" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="407.5" width="80" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

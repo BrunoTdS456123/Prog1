@@ -367,6 +367,24 @@
         <mxCell id="WoEynEt4-xypaKONyxZ4-248" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="465" y="600" width="80" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-251" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=0;fillColor=#008a00;strokeColor=#005700;whiteSpace=wrap;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="570" y="290" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-252" value="roteador wifi" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="280" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-255" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=10;fillColor=#1ba1e2;strokeColor=#006EAF;whiteSpace=wrap;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="565" y="320" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-256" value="switch de rede" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="585" y="315" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-261" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.shaded_button;dx=10;fillColor=#d80073;strokeColor=#A50040;whiteSpace=wrap;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="555" y="352.5" width="40" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="WoEynEt4-xypaKONyxZ4-262" value="servidor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="365" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
